@@ -10,5 +10,11 @@
     <header>
         <h1>Cupcakes</h1>
     </header>
+    <main>
+        <ul>
+            {% for cupcake in Cupcakes %}
+                <li>{{ cupcake["flavor"] }} - {{ cupcake["size"] }} - {{ cupcake["rating"] }}</li>
+            {% endfor %}
+        </ul>
 </body>
 </html>
